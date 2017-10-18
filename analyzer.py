@@ -12,7 +12,7 @@ if __name__ == '__main__':
     parser = OptionParser()
     parser.add_option("--input", dest="in_file", help="Input file path", metavar="FILE")
     parser.add_option("--output", dest="out_file", help="Output file path", metavar="FILE")
-    parser.add_option("--conll", dest="conll", help="For reanalyzing files in CoNLLu format", default=False)
+    parser.add_option("--conll", action="store_true", dest="conll", help="For reanalyzing files in CoNLLu format", default=False)
 
     options, _ = parser.parse_args()
 
